@@ -1,4 +1,4 @@
-/*  const listForm = document.querySelector("#listForm"); */
+
 
 let listArray = JSON.parse(localStorage.getItem("list")) || [];
 
@@ -42,27 +42,20 @@ const showTasks = (clearTask = false) => {
                 listContent.innerHTML + `
     <div class="taskItem">
     <div class="checkbox"><input type="checkbox" >
-        <label> Tarefa: ${task.description} </label> 
+        <label> <strong>Tarefa:</strong> ${task.description} </label> 
     </div>
-    <div class="buttonDelete"> <button type="submit" onclick="removeTask(${task.id})">X</button></div>
+    <div class="buttonDelete"> <button type="submit" id="button" onclick="removeTask(${task.id})">Excluir</button></div>
 </div>`
         });
     }
 }
 
-//passos
-// criar função para o botão deletar passando o id
-// filter pelo Id e remover objeto do array 
-//salvar array no localstorage
-// salvar o local storage
-// atualizar a página
 
 
 
 const getId = () => (Math.random() * 10000).toString();
 
 
-//style="text-decoration: line-through"
 
 window.onload = function () {
     showTasks();

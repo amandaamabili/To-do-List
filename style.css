@@ -1,10 +1,96 @@
 
-
-.taskItem{
+body{
+    background-color: #F0E5CF;
+    
+    align-items: center;
     display: flex;
+   flex-direction: column;
+   font-family: 'Montserrat', sans-serif;
 }
 
+h3, h1{
+   color: #4B6587;
+   align-items: center;
+   font-style:unset;
+}
+h3{
+    font-size: 25px;
+}
+.container{
+    -webkit-box-shadow: 5px 2px 20px 8px rgba(200,198,198,0.62);
+-moz-box-shadow: 5px 2px 20px 8px rgba(200,198,198,0.62);
+box-shadow: 5px 2px 20px 8px rgba(200,198,198,0.62);
+    background-color: #F7F6F2;
+    border-radius: 100px 50px 100px 50px;
+    -moz-border-radius: 100px 50px 100px 50px;
+    -webkit-border-radius: 100px 50px 100px 50px;
+    border: 7px double #C8C6C6;
+    width: 700px;
+    height: 700px;
+
+    align-items: center;
+    display: flex;
+   flex-direction: column;
+
+   
+}
+.dados{
+    background-color: #C8C6C6;
+    border-radius: 10px;
+    height: 30px;
+    margin-bottom: 20px;
+    
+}
+.dados input, button{
+    background-color: #C8C6C6;
+    color: #4B6587;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    height: 30px;
+    font-weight: bold;
+}
+.dados input{
+    width: 400px;
+}
+.dados button{
+    margin-left: -19px;
+    background-color:#C8C6C6;
+    cursor: pointer;
+    width: 80px;
+    height: 33px;
+    font-size: 15px;
+}
+.taskItem{
+    display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+    margin-top: 20px;
+   
+    width: 475px;
+    height: 10px;
+   
+    color:#4B6587 ;
+    
+}
+.taskItem .buttonDelete{
+    margin-left: 5px;
+   
+}
+.taskItem .buttonDelete #button{
+    height: 20px;
+    width: 60px;
+    color: rgb(255, 0, 0);
+    background-color: #F7F6F2;
+    cursor: pointer;
+}
+
+  
+ 
+  
+
 .content input[type=checkbox]:checked + label {
-    color:rgb(8, 7, 7);
+  
+    color:#164424;
     text-decoration: line-through;
-  }
+  } 

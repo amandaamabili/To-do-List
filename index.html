@@ -5,25 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>To-do-List</title>
 </head>
 
 <body>
-    <h1>Planejamento Diário</h1>
+    <header>
+        <h1>Planejamento Diário</h1>
+    </header>
+
+    <div class="container">
+        <h3>Lista de Tarefas</h3>
+
+        <div class="dados" > <input type="text" id="taskInput">
+            <button type="submit" id="taskAddButton" onclick="submit()"> Adcionar</button>
+        </div>
+
+        <div class="content"></div>
+    </div>
 
 
-    <h3>Lista de Afazeres</h3>
-    <input type="text" id="taskInput">
-    <button type="submit" id="taskAddButton" onclick="submit()"> Adcionar</button>
-    <div class="content" ></div>
 
 
     <script src="./script.js"></script>
 </body>
 
 </html>
-
-
-
-
